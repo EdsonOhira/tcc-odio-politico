@@ -25,7 +25,7 @@ Principal resultado: com cerca de 50 mil nós rotulados, a GAT sobre o grafo hí
 ```
 docs/        manual de anotação (PDF)
 notebooks/   notebooks dos experimentos (Google Colab)
-src/         código-fonte
+src/         scripts do pipeline, numerados na ordem de execução (ver src/README.md)
 configs/     configurações e hiperparâmetros
 data/        dados (não versionados — corpus confidencial)
 ```
