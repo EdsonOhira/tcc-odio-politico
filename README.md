@@ -24,13 +24,17 @@ Principal resultado: com cerca de 50 mil nós rotulados, a GAT sobre o grafo hí
 
 ```
 docs/        manual de anotação (PDF)
-notebooks/   notebooks dos experimentos (Google Colab)
-src/         scripts do pipeline, numerados na ordem de execução (ver src/README.md)
-results/     saídas dos experimentos em JSON (métricas, kappa, ablações, sementes)
+src/         scripts de preparação dos dados, tabelas e figuras (ver src/README.md)
+results/     log de extração do corpus, métricas de concordância e tabelas de resultados (JSON)
 figuras/     figuras dos resultados e do grafo
-configs/     configurações e hiperparâmetros
 data/        dados (não versionados — corpus confidencial)
 ```
+
+## Como executar
+
+1. Instale as dependências: Python 3.12, pandas, numpy, matplotlib, PyTorch, Hugging Face Transformers e PyTorch Geometric.
+2. Coloque os dados no diretório indicado pela variável `BASE_DIR` / `BASE` no início de cada script (o corpus não é distribuído; ver `data/README.md`).
+3. Execute os scripts de `src/` na ordem da tabela em `src/README.md`.
 
 ## Configuração dos experimentos
 
