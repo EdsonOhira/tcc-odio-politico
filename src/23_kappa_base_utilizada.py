@@ -1,8 +1,8 @@
 """Concordância entre anotadores restrita aos textos que entraram na base usada.
 
 O kappa_metricas.json foi calculado sobre as 1.396 linhas da planilha de anotação.
-A base usada nos experimentos (base_humana.csv, 1.167 textos) contém só parte delas;
-o restante veio de Ódio.csv, que não tem anotação múltipla e por isso fica de fora.
+Este script recalcula as métricas considerando os textos da planilha que entraram
+na base usada nos experimentos (base_humana.csv, 1.167 textos).
 """
 
 import json
@@ -131,12 +131,11 @@ usada = hum.merge(kap[["k"] + ANOT], on="k", how="inner")
 
 saida = {
     "descricao": ("Concordância restrita aos textos da planilha de anotação que entraram "
-                  "em base_humana.csv. Os textos vindos de Ódio.csv não têm anotação "
-                  "múltipla e não entram no cálculo."),
+                  "em base_humana.csv."),
     "procedencia_das_colunas": ref["procedencia_das_colunas"],
     "base_humana_total": int(len(hum)),
     "base_humana_na_planilha": int(len(usada)),
-    "base_humana_de_odio_csv": int(len(hum) - len(usada)),
+    "base_humana_fora_da_planilha": int(len(hum) - len(usada)),
     "planilha_inteira_referencia": {k: ref[k] for k in
                                     ["n_linhas", "concordancia_bruta", "fleiss_kappa",
                                      "krippendorff_alpha", "gwet_ac1"]},
