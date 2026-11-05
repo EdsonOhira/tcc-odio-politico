@@ -41,7 +41,7 @@ flowchart LR
 ```
 
 1. **Corpus:** 1.389.772 publicações em português; após remover republicações e duplicatas, 130.974 textos originais.
-2. **Anotação:** amostra aleatória rotulada por três avaliadores (ódio político / não ódio), com rótulo final por maioria (pelo menos dois de três), seguindo o [manual de anotação](docs/Manual_Anotacao_Odio_Politico.pdf). Base final de 1.167 textos: 811 de treino, 150 de validação e 206 de teste congelado, nunca usados em treino nem na escolha de configurações.
+2. **Anotação:** amostra aleatória rotulada por três avaliadores (ódio político / não ódio), com rótulo final por maioria (pelo menos dois de três), seguindo o [manual de anotação](docs/Manual_Anotacao_Odio_Politico.pdf). Após a consolidação, a remoção de duplicatas e o balanceamento das classes, a base final tem 1.167 textos (49,4% de ódio político): 811 de treino, 150 de validação e 206 de teste congelado, nunca usados em treino nem na escolha de configurações.
 3. **Classificador de referência:** BERTimbau base (`neuralmind/bert-base-portuguese-cased`), com as oito camadas inferiores congeladas e as quatro superiores ajustadas.
 4. **Auto-rotulagem:** ciclo iterativo de pseudo-rotulagem, com limiares de confiança calibrados na validação para uma precisão mínima de 90%.
 5. **Grafos:** dois grafos de 57.440 nós — **semântico** (kNN pela similaridade dos textos) e **híbrido** (similaridade + relações de conversa e autoria). GCN e GAT foram comparadas a um MLP sem grafo, com 961 rótulos humanos e com cerca de 50 mil rótulos (humanos + pseudo-rótulos), em 10 sementes.
@@ -84,7 +84,7 @@ data/        dados (não versionados — corpus confidencial)
 
 | Componente | Configuração |
 |---|---|
-| BERTimbau | 4 camadas superiores ajustadas; textos de até 128 tokens; lotes de 16; taxa de aprendizado 2 × 10⁻⁵; decaimento de peso 0,01; aquecimento de 10%; AdamW; parada antecipada (paciência 2) pelo F1-macro na validação |
+| BERTimbau | 4 camadas superiores ajustadas; textos de até 128 tokens; lotes de 16; taxa de aprendizado 2 × 10⁻⁵; decaimento de peso 0,01; aquecimento de 10%; AdamW; pesos de classe balanceados; parada antecipada (paciência 2) pelo F1-macro na validação |
 | Auto-rotulagem | até 6 rodadas, 2 sementes por rodada; grade de limiares {0,90; 0,95; 0,97; 0,99; 0,995}; precisão mínima de 90% na validação; seleção balanceada, até 40.000 textos por classe |
 | Grafo semântico | kNN com k = 5 pelo cosseno da média dos vetores dos tokens |
 | Arestas de interação | mesma conversa ou mesmo autor, até 3 vizinhos anteriores e 3 posteriores em ordem cronológica |
