@@ -1,0 +1,67 @@
+7 arquivos no zip
+
+--- a_06_09  (24 MB)
+       14,236 linhas lidas,    14,236 em pt (0 min)
+  a_06_09: 14,236 linhas -> 14,236 em pt
+  idiomas: pt=14,236
+
+--- b_09_12  (53 MB)
+       33,010 linhas lidas,    33,009 em pt (0 min)
+  b_09_12: 33,010 linhas -> 33,009 em pt
+  idiomas: pt=33,010
+
+--- c_12_15  (74 MB)
+       43,022 linhas lidas,    43,022 em pt (0 min)
+  c_12_15: 43,022 linhas -> 43,022 em pt
+  idiomas: pt=43,022
+
+--- d_15_18  (786 MB)
+      100,000 linhas lidas,   100,000 em pt (0 min)
+      200,000 linhas lidas,   200,000 em pt (0 min)
+      300,000 linhas lidas,   300,000 em pt (0 min)
+      392,565 linhas lidas,   392,563 em pt (0 min)
+  d_15_18: 392,565 linhas -> 392,563 em pt
+  idiomas: pt=392,565
+
+--- e_18_21  (962 MB)
+      100,000 linhas lidas,   100,000 em pt (0 min)
+      200,000 linhas lidas,   200,000 em pt (0 min)
+      300,000 linhas lidas,   300,000 em pt (0 min)
+      400,000 linhas lidas,   400,000 em pt (0 min)
+      450,455 linhas lidas,   450,455 em pt (0 min)
+  e_18_21: 450,455 linhas -> 450,455 em pt
+  idiomas: pt=450,455
+
+--- f_21_01  (743 MB)
+      100,000 linhas lidas,    99,999 em pt (0 min)
+      200,000 linhas lidas,   199,995 em pt (0 min)
+      300,000 linhas lidas,   299,995 em pt (0 min)
+      358,565 linhas lidas,   358,560 em pt (0 min)
+  f_21_01: 358,565 linhas -> 358,560 em pt
+  idiomas: pt=358,565
+
+--- g_01_06  (208 MB)
+       97,927 linhas lidas,    97,927 em pt (0 min)
+  g_01_06: 97,927 linhas -> 97,927 em pt
+  idiomas: pt=97,927
+
+======================================================================
+PASSO B - juntar partes, remover duplicatas, separar retweets
+======================================================================
+  a_06_09.csv: acumulado 14,236 linhas, 1,895 textos distintos (0 min)
+  b_09_12.csv: acumulado 47,245 linhas, 4,766 textos distintos (0 min)
+  c_12_15.csv: acumulado 90,267 linhas, 8,227 textos distintos (1 min)
+  d_15_18.csv: acumulado 482,830 linhas, 65,109 textos distintos (1 min)
+  e_18_21.csv: acumulado 933,285 linhas, 116,016 textos distintos (1 min)
+  f_21_01.csv: acumulado 1,291,845 linhas, 147,563 textos distintos (1 min)
+  g_01_06.csv: acumulado 1,389,772 linhas, 155,223 textos distintos (1 min)
+
+linhas em pt                  1,389,772
+retweets                      1,186,690  (85.4%)
+textos distintos                155,223
+  originais (para rotular)      130,974
+  retweets (truncados)           24,249
+
+corpus_08jan.csv          130,974 textos
+corpus_08jan_retweets.csv 24,249 textos
+tempo total: 1 min

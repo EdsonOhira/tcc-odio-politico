@@ -1,0 +1,18 @@
+{
+  "corte": 0.95,
+  "n_total": 10500,
+  "n_distintos": 8807,
+  "duplicados": 1693,
+  "vistos_no_treino": 918,
+  "distribuicao_total": {
+    "nao_odio": 6714,
+    "odio": 3786
+  },
+  "aceitos": 1953,
+  "revisao": 8547,
+  "cobertura": 0.186,
+  "distribuicao_aceitos": {
+    "nao_odio": 1298,
+    "odio": 655
+  }
+}

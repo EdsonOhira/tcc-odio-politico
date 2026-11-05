@@ -1,0 +1,13 @@
+{
+  "arquivo": "embeddings_base_ampliada.npy",
+  "gerado_de": "base_ampliada.csv",
+  "sha256_da_base": "cc87027da4888830aa2f0aff42ebd975769912bb21095c434b2536fd8a3d7553",
+  "n_textos": 2396,
+  "dimensao": 768,
+  "modelo": "modelo_1 (BERTimbau ajustado, freeze_layers=4)",
+  "pooling": "mean (com mascara de atencao)",
+  "max_length": 128,
+  "homofilia_k5": 0.9081996434937611,
+  "acaso": 0.5067310988542395,
+  "excedente": 0.40146854463952164
+}

@@ -1,0 +1,342 @@
+{
+ "configuracoes": {
+  "humanos|A sem arestas|MLP": {
+   "media": 0.7788,
+   "desvio": 0.0133
+  },
+  "humanos|B kNN semantico|GCN": {
+   "media": 0.7516,
+   "desvio": 0.0102
+  },
+  "humanos|B kNN semantico|GAT": {
+   "media": 0.7891,
+   "desvio": 0.0095
+  },
+  "humanos|C hibrido|GCN": {
+   "media": 0.7552,
+   "desvio": 0.0175
+  },
+  "humanos|C hibrido|GAT": {
+   "media": 0.7742,
+   "desvio": 0.0102
+  },
+  "denso|A sem arestas|MLP": {
+   "media": 0.8026,
+   "desvio": 0.0044
+  },
+  "denso|B kNN semantico|GCN": {
+   "media": 0.8042,
+   "desvio": 0.0077
+  },
+  "denso|B kNN semantico|GAT": {
+   "media": 0.8106,
+   "desvio": 0.0023
+  },
+  "denso|C hibrido|GCN": {
+   "media": 0.8105,
+   "desvio": 0.0047
+  },
+  "denso|C hibrido|GAT": {
+   "media": 0.8164,
+   "desvio": 0.0038
+  },
+  "denso@0.95|A sem arestas|MLP": {
+   "media": 0.8044,
+   "desvio": 0.0064
+  },
+  "denso@0.95|B kNN semantico|GCN": {
+   "media": 0.8076,
+   "desvio": 0.0062
+  },
+  "denso@0.95|B kNN semantico|GAT": {
+   "media": 0.8096,
+   "desvio": 0.006
+  },
+  "denso@0.95|C hibrido|GCN": {
+   "media": 0.8105,
+   "desvio": 0.0033
+  },
+  "denso@0.95|C hibrido|GAT": {
+   "media": 0.8134,
+   "desvio": 0.0041
+  }
+ },
+ "vs_sem_grafo": {
+  "humanos|B kNN semantico|GCN": {
+   "dif": -0.0271,
+   "ic95": [
+    -0.0413,
+    -0.013
+   ],
+   "vitorias": "2/10",
+   "p": 0.0019
+  },
+  "humanos|B kNN semantico|GAT": {
+   "dif": 0.0103,
+   "ic95": [
+    0.0011,
+    0.0195
+   ],
+   "vitorias": "8/10",
+   "p": 0.032
+  },
+  "humanos|C hibrido|GCN": {
+   "dif": -0.0236,
+   "ic95": [
+    -0.0407,
+    -0.0065
+   ],
+   "vitorias": "1/10",
+   "p": 0.012
+  },
+  "humanos|C hibrido|GAT": {
+   "dif": -0.0046,
+   "ic95": [
+    -0.0166,
+    0.0073
+   ],
+   "vitorias": "3/10",
+   "p": 0.4
+  },
+  "denso|B kNN semantico|GCN": {
+   "dif": 0.0016,
+   "ic95": [
+    -0.0056,
+    0.0089
+   ],
+   "vitorias": "4/10",
+   "p": 0.62
+  },
+  "denso|B kNN semantico|GAT": {
+   "dif": 0.008,
+   "ic95": [
+    0.0049,
+    0.0111
+   ],
+   "vitorias": "10/10",
+   "p": 0.00026
+  },
+  "denso|C hibrido|GCN": {
+   "dif": 0.0079,
+   "ic95": [
+    0.0028,
+    0.0131
+   ],
+   "vitorias": "9/10",
+   "p": 0.0066
+  },
+  "denso|C hibrido|GAT": {
+   "dif": 0.0138,
+   "ic95": [
+    0.0095,
+    0.0182
+   ],
+   "vitorias": "10/10",
+   "p": 5.3e-05
+  },
+  "denso@0.95|B kNN semantico|GCN": {
+   "dif": 0.0032,
+   "ic95": [
+    -0.0018,
+    0.0082
+   ],
+   "vitorias": "8/10",
+   "p": 0.18
+  },
+  "denso@0.95|B kNN semantico|GAT": {
+   "dif": 0.0052,
+   "ic95": [
+    0.0013,
+    0.0092
+   ],
+   "vitorias": "7/10",
+   "p": 0.015
+  },
+  "denso@0.95|C hibrido|GCN": {
+   "dif": 0.0061,
+   "ic95": [
+    0.0013,
+    0.0109
+   ],
+   "vitorias": "7/10",
+   "p": 0.018
+  },
+  "denso@0.95|C hibrido|GAT": {
+   "dif": 0.009,
+   "ic95": [
+    0.0036,
+    0.0145
+   ],
+   "vitorias": "9/10",
+   "p": 0.0045
+  }
+ },
+ "hibrido_menos_semantico": {
+  "humanos|GCN": {
+   "dif": 0.0036,
+   "ic95": [
+    -0.0053,
+    0.0124
+   ],
+   "vitorias": "7/10",
+   "p": 0.39
+  },
+  "humanos|GAT": {
+   "dif": -0.0149,
+   "ic95": [
+    -0.0254,
+    -0.0044
+   ],
+   "vitorias": "1/10",
+   "p": 0.011
+  },
+  "denso|GCN": {
+   "dif": 0.0063,
+   "ic95": [
+    0.0008,
+    0.0119
+   ],
+   "vitorias": "6/10",
+   "p": 0.03
+  },
+  "denso|GAT": {
+   "dif": 0.0058,
+   "ic95": [
+    0.0022,
+    0.0095
+   ],
+   "vitorias": "9/10",
+   "p": 0.0056
+  },
+  "denso@0.95|GCN": {
+   "dif": 0.0029,
+   "ic95": [
+    -0.0015,
+    0.0074
+   ],
+   "vitorias": "7/10",
+   "p": 0.17
+  },
+  "denso@0.95|GAT": {
+   "dif": 0.0038,
+   "ic95": [
+    -0.0011,
+    0.0087
+   ],
+   "vitorias": "5/10",
+   "p": 0.11
+  }
+ },
+ "densidade_ganho": {
+  "A sem arestas|MLP": {
+   "dif": 0.0238,
+   "ic95": [
+    0.0124,
+    0.0353
+   ],
+   "vitorias": "9/10",
+   "p": 0.0011
+  },
+  "B kNN semantico|GCN": {
+   "dif": 0.0526,
+   "ic95": [
+    0.0425,
+    0.0627
+   ],
+   "vitorias": "10/10",
+   "p": 9.2e-07
+  },
+  "B kNN semantico|GAT": {
+   "dif": 0.0215,
+   "ic95": [
+    0.014,
+    0.0291
+   ],
+   "vitorias": "10/10",
+   "p": 0.00012
+  },
+  "C hibrido|GCN": {
+   "dif": 0.0553,
+   "ic95": [
+    0.0424,
+    0.0683
+   ],
+   "vitorias": "10/10",
+   "p": 4.6e-06
+  },
+  "C hibrido|GAT": {
+   "dif": 0.0423,
+   "ic95": [
+    0.0344,
+    0.0502
+   ],
+   "vitorias": "10/10",
+   "p": 7e-07
+  }
+ },
+ "corte_095": {
+  "A sem arestas|MLP": {
+   "dif": 0.0018,
+   "ic95": [
+    -0.0025,
+    0.0062
+   ],
+   "vitorias": "5/10",
+   "p": 0.37
+  },
+  "B kNN semantico|GCN": {
+   "dif": 0.0034,
+   "ic95": [
+    -0.0042,
+    0.011
+   ],
+   "vitorias": "5/10",
+   "p": 0.34
+  },
+  "B kNN semantico|GAT": {
+   "dif": -0.001,
+   "ic95": [
+    -0.0056,
+    0.0037
+   ],
+   "vitorias": "3/10",
+   "p": 0.65
+  },
+  "C hibrido|GCN": {
+   "dif": 0.0,
+   "ic95": [
+    -0.0044,
+    0.0044
+   ],
+   "vitorias": "4/10",
+   "p": 1.0
+  },
+  "C hibrido|GAT": {
+   "dif": -0.003,
+   "ic95": [
+    -0.0048,
+    -0.0012
+   ],
+   "vitorias": "0/10",
+   "p": 0.0049
+  }
+ },
+ "melhor_niveis": {
+  "0.9": [
+   0.0103,
+   0.0174
+  ],
+  "0.95": [
+   0.0095,
+   0.0182
+  ],
+  "0.99": [
+   0.0076,
+   0.0201
+  ]
+ },
+ "melhor_t": {
+  "t": 7.1665,
+  "se": 0.001931
+ }
+}

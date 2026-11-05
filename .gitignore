@@ -15,3 +15,6 @@ __pycache__/
 .ipynb_checkpoints/
 .venv/
 .env
+
+# Textos do corpus em CSV (confidencial)
+results/**/*.csv

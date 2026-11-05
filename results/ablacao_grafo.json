@@ -1,0 +1,109 @@
+{
+  "n": 1167,
+  "acaso": 0.5000826058511376,
+  "k": 5,
+  "resultados": {
+    "modelo_1 (BERTimbau ajustado)": {
+      "knn5": {
+        "arestas": 4929,
+        "homofilia": 0.7435585311422195,
+        "excedente": 0.24347592529108186
+      },
+      "homofilia_ponderada": 0.746677419737105,
+      "pisos": {
+        "p0": {
+          "corte": 0.0,
+          "arestas": 4929,
+          "isolados": 0,
+          "homofilia": 0.7435585311422195
+        },
+        "p10": {
+          "corte": 0.6890710592269897,
+          "arestas": 4436,
+          "isolados": 38,
+          "homofilia": 0.7477457168620378
+        },
+        "p25": {
+          "corte": 0.7263468503952026,
+          "arestas": 3697,
+          "isolados": 158,
+          "homofilia": 0.7589937787395186
+        },
+        "p50": {
+          "corte": 0.7684609889984131,
+          "arestas": 2465,
+          "isolados": 383,
+          "homofilia": 0.785395537525355
+        }
+      }
+    },
+    "ST MiniLM multilingue": {
+      "knn5": {
+        "arestas": 4956,
+        "homofilia": 0.6057304277643261,
+        "excedente": 0.10564782191318844
+      },
+      "homofilia_ponderada": 0.6093439919615881,
+      "pisos": {
+        "p0": {
+          "corte": 0.0,
+          "arestas": 4956,
+          "isolados": 0,
+          "homofilia": 0.6057304277643261
+        },
+        "p10": {
+          "corte": 0.5766574144363403,
+          "arestas": 4460,
+          "isolados": 58,
+          "homofilia": 0.614798206278027
+        },
+        "p25": {
+          "corte": 0.6686668395996094,
+          "arestas": 3717,
+          "isolados": 178,
+          "homofilia": 0.609362389023406
+        },
+        "p50": {
+          "corte": 0.733169674873352,
+          "arestas": 2478,
+          "isolados": 371,
+          "homofilia": 0.6138014527845036
+        }
+      }
+    },
+    "ST mpnet multilingue": {
+      "knn5": {
+        "arestas": 4929,
+        "homofilia": 0.6200040576181781,
+        "excedente": 0.1199214517670405
+      },
+      "homofilia_ponderada": 0.6237993970494391,
+      "pisos": {
+        "p0": {
+          "corte": 0.0,
+          "arestas": 4929,
+          "isolados": 0,
+          "homofilia": 0.6200040576181781
+        },
+        "p10": {
+          "corte": 0.607966959476471,
+          "arestas": 4436,
+          "isolados": 60,
+          "homofilia": 0.6239855725879171
+        },
+        "p25": {
+          "corte": 0.6812640428543091,
+          "arestas": 3697,
+          "isolados": 174,
+          "homofilia": 0.6326751420070327
+        },
+        "p50": {
+          "corte": 0.7399223446846008,
+          "arestas": 2465,
+          "isolados": 368,
+          "homofilia": 0.6462474645030426
+        }
+      }
+    }
+  }
+}

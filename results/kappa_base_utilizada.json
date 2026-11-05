@@ -1,0 +1,135 @@
+{
+  "descricao": "Concordância restrita aos textos da planilha de anotação que entraram em base_humana.csv. Os textos vindos de Ódio.csv não têm anotação múltipla e não entram no cálculo.",
+  "procedencia_das_colunas": {
+    "Vinola": "anotacao manual",
+    "Carlin": "anotacao manual",
+    "Edin": "rotulacao automatica por LLM"
+  },
+  "base_humana_total": 1167,
+  "base_humana_na_planilha": 1042,
+  "base_humana_de_odio_csv": 125,
+  "planilha_inteira_referencia": {
+    "n_linhas": 1396,
+    "concordancia_bruta": 0.7497612225405921,
+    "fleiss_kappa": 0.2133426677807779,
+    "krippendorff_alpha": 0.21353050381998995,
+    "gwet_ac1": 0.633025055999117
+  },
+  "base_usada": {
+    "n_textos": 1042,
+    "concordancia_bruta": 0.6961,
+    "fleiss_kappa": 0.1843,
+    "krippendorff_alpha": 0.1846,
+    "gwet_ac1": 0.5156,
+    "cohen_pares": {
+      "Vinola x Edin": 0.0928,
+      "Vinola x Carlin": 0.4865,
+      "Edin x Carlin": 0.0704
+    },
+    "so_humanos_vinola_x_carlin": {
+      "concordancia_bruta": 0.7591,
+      "cohen_kappa": 0.4865,
+      "gwet_ac1": 0.5558
+    },
+    "unanimes": 567,
+    "divididos": 475,
+    "votos_odio_por_texto": {
+      "0": 543,
+      "1": 248,
+      "2": 227,
+      "3": 24
+    },
+    "taxa_odio_por_anotador": {
+      "Vinola": 0.2793,
+      "Edin": 0.0336,
+      "Carlin": 0.4299
+    },
+    "rotulo_usado_x_anotador": {
+      "concorda_com_maioria": 842,
+      "concorda_com_Vinola": 792,
+      "concorda_com_Edin": 618,
+      "concorda_com_Carlin": 1039,
+      "cohen_rotulo_x_Vinola": 0.4899,
+      "cohen_rotulo_x_Edin": 0.0696,
+      "cohen_rotulo_x_Carlin": 0.9941
+    }
+  },
+  "treino_base_A": {
+    "n_textos": 937,
+    "concordancia_bruta": 0.677,
+    "fleiss_kappa": 0.1765,
+    "krippendorff_alpha": 0.1768,
+    "gwet_ac1": 0.4685,
+    "cohen_pares": {
+      "Vinola x Edin": 0.0977,
+      "Vinola x Carlin": 0.4998,
+      "Edin x Carlin": 0.0635
+    },
+    "so_humanos_vinola_x_carlin": {
+      "concordancia_bruta": 0.7545,
+      "cohen_kappa": 0.4998,
+      "gwet_ac1": 0.5345
+    },
+    "unanimes": 483,
+    "divididos": 454,
+    "votos_odio_por_texto": {
+      "0": 459,
+      "1": 227,
+      "2": 227,
+      "3": 24
+    },
+    "taxa_odio_por_anotador": {
+      "Vinola": 0.2882,
+      "Edin": 0.0374,
+      "Carlin": 0.4781
+    },
+    "rotulo_usado_x_anotador": {
+      "concorda_com_maioria": 737,
+      "concorda_com_Vinola": 708,
+      "concorda_com_Edin": 513,
+      "concorda_com_Carlin": 934,
+      "cohen_rotulo_x_Vinola": 0.5033,
+      "cohen_rotulo_x_Edin": 0.0626,
+      "cohen_rotulo_x_Carlin": 0.9936
+    }
+  },
+  "teste_base_B": {
+    "n_textos": 105,
+    "concordancia_bruta": 0.8667,
+    "fleiss_kappa": -0.0714,
+    "krippendorff_alpha": -0.068,
+    "gwet_ac1": 0.8477,
+    "cohen_pares": {
+      "Vinola x Edin": 0.0,
+      "Vinola x Carlin": 0.0,
+      "Edin x Carlin": null
+    },
+    "so_humanos_vinola_x_carlin": {
+      "concordancia_bruta": 0.8,
+      "cohen_kappa": 0.0,
+      "gwet_ac1": 0.7561
+    },
+    "unanimes": 84,
+    "divididos": 21,
+    "votos_odio_por_texto": {
+      "0": 84,
+      "1": 21,
+      "2": 0,
+      "3": 0
+    },
+    "taxa_odio_por_anotador": {
+      "Vinola": 0.2,
+      "Edin": 0.0,
+      "Carlin": 0.0
+    },
+    "rotulo_usado_x_anotador": {
+      "concorda_com_maioria": 105,
+      "concorda_com_Vinola": 84,
+      "concorda_com_Edin": 105,
+      "concorda_com_Carlin": 105,
+      "cohen_rotulo_x_Vinola": 0.0,
+      "cohen_rotulo_x_Edin": null,
+      "cohen_rotulo_x_Carlin": null
+    }
+  }
+}

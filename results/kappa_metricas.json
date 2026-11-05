@@ -1,0 +1,45 @@
+{
+  "arquivo_origem": "KAPPA - Separado.xlsx",
+  "aba": "Rotulaçao - TCC",
+  "n_linhas": 1396,
+  "anotadores": [
+    "Vinola",
+    "Edin",
+    "Carlin"
+  ],
+  "procedencia_das_colunas": {
+    "Vinola": "anotacao manual",
+    "Carlin": "anotacao manual",
+    "Edin": "rotulacao automatica por LLM"
+  },
+  "concordancia_bruta": 0.7497612225405921,
+  "fleiss_kappa": 0.2133426677807779,
+  "cohen_pares": {
+    "Vinola x Edin": 0.09523290153701591,
+    "Vinola x Carlin": 0.49126123750628103,
+    "Edin x Carlin": 0.07909029593780703
+  },
+  "gwet_ac1": 0.633025055999117,
+  "krippendorff_alpha": 0.21353050381998995,
+  "unanimes": 872,
+  "divididos": 524,
+  "votos_odio_por_texto": {
+    "0": 847,
+    "1": 292,
+    "2": 232,
+    "3": 25
+  },
+  "taxa_odio_por_anotador": {
+    "Vinola": 0.22994269340974213,
+    "Edin": 0.027220630372492838,
+    "Carlin": 0.33810888252148996
+  },
+  "regra_consolidacao": "voto majoritario (2/1 e 3/0 com o mesmo peso)",
+  "duplicatas_removidas": 56,
+  "duplicatas_conflitantes": 5,
+  "base_final": 1340,
+  "distribuicao_final": {
+    "0": 1089,
+    "1": 251
+  }
+}
